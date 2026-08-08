@@ -1,0 +1,1 @@
+module demux_1x8( input D, input S2, S1, S0, output Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7 ); assign Y0 = (~S2 & ~S1 & ~S0) & D; assign Y1 = (~S2 & ~S1 & S0) & D; assign Y2 = (~S2 & S1 & ~S0) & D; assign Y3 = (~S2 & S1 & S0) & D; assign Y4 = ( S2 & ~S1 & ~S0) & D; assign Y5 = ( S2 & ~S1 & S0) & D; assign Y6 = ( S2 & S1 & ~S0) & D; assign Y7 = ( S2 & S1 & S0) & D; endmodule
